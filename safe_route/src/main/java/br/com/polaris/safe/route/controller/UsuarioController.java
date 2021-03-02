@@ -44,7 +44,7 @@ public class UsuarioController {
 
 
         }
-        return valida ? "Logado com sucesso" : "Usuario ou senha incorretos";
+        return valida ? "Logado com sucesso" : "Usuario(a) ou senha incorretos";
     }
 
 }
