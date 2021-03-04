@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    height: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html {
+    --green-primary: #32BE60;
+    --purple-primary: #9B63FF;
+    --gray-primary: #F6F6F6;
+    --white-primary: #FFFFFF;
+    --title-color: #333333;
+    --text-color: #666666;
+    --text-ligth-color: #B0B0B0;
+    --border-input-color: #CCCCCC;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.login-area{
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.06);
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.image-area{
+    width: 70%;
+    height: 100%;
+    background-color: var(--gray-primary);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.image-area img{
+    width: 861px;
+    height: 595px;
+    position: absolute;
+    right: -60px;
+}
+
+.group-form{
+    width: 80%;
+    height: 90%;
+}
+
+.group-footer p{
+    font-size: 14px;
+    color: var(--text-ligth-color);
+}
+
+.group-input{
+    width: 100%;
+    height: 76px;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.group-input label{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--title-color);
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.group-input input{
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border: 1px solid var(--border-input-color);
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+    outline: none;
+}
+
+.header{
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row !important;
+    margin-bottom: 25px;
+}
+
+.header p{
+    width: auto;
+    height: auto;
+    letter-spacing: -2px;
+    font-size: 50px;
+    font-weight: 600;
+    border: 0 !important;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+}
+
+.header i{
+    width: auto;
+    height: auto;
+    font-size: 74px;
+    color: var(--green-primary);
+}
+
+.form-check{
+    margin-bottom: 15px;
+}
+
+.form-check-input:checked {
+    background-color: var(--green-primary) !important;
+    border-color: var(--green-primary) !important;
+}
+
+.form-check label{
+    font-size: 14px !important;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.btn-area{
+    height: auto !important;
+}
+
+.button{
+    margin: 0 !important;
+    border: 0 !important;
+    color: var(--white-primary);
+    background-color: var(--green-primary);
+    font-weight: 500;
+}
+
+.button-secondary{
+    background: var(--white-primary);
+    border: 2px solid var(--green-primary) !important;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 !important;
+}
+
+.cadastro{
+    font-size: 14px !important;
+    color: var(--text-color) !important;
+    font-weight: 500 !important;
+}
+
+.separator{
+    height: auto !important;
+    position: relative;
+    display: flex;
+}
+
+.separator div{
+    position: absolute;
+    text-align: center !important;
+    width: 20%;
+    height: 100%;
+    margin-left: 40%;
+    background: var(--white-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator div label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0 !important;
+    margin: 0 !important;
+}
