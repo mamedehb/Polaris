@@ -12,13 +12,12 @@ public class Comum extends Usuario{
                  String senha,
                  String foto,
                  String dataNascimento,
-                 String numeroTelefone,
-                 boolean valida) {
+                 String numeroTelefone) {
         super(id, nome, email, senha);
         this.foto = foto;
         this.dataNascimento = dataNascimento;
         this.numeroTelefone = numeroTelefone;
-        this.valida = valida;
+        this.valida = false;
     }
 
     public String getFoto() {
