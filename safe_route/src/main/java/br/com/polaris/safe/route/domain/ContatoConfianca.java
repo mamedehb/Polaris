@@ -6,20 +6,19 @@ public class ContatoConfianca {
     private String email;
     private String numeroTelefone;
 
-    public ContatoConfianca(int id, String nome, String email, String numeroTelefone) {
-        this.id = id;
+    public ContatoConfianca(String nome, String email, String numeroTelefone) {
         this.nome = nome;
         this.email = email;
         this.numeroTelefone = numeroTelefone;
+    }
+
+    public ContatoConfianca() {
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
