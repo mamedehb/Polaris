@@ -6,14 +6,17 @@ public class Comum extends Usuario{
     private String numeroTelefone;
     private boolean valida;
 
-    public Comum(int id,
+    public Comum() {
+    }
+
+    public Comum(
                  String nome,
                  String email,
                  String senha,
                  String foto,
                  String dataNascimento,
                  String numeroTelefone) {
-        super(id, nome, email, senha);
+        super(nome, email, senha);
         this.foto = foto;
         this.dataNascimento = dataNascimento;
         this.numeroTelefone = numeroTelefone;

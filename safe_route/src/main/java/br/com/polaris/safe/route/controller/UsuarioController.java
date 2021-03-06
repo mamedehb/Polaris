@@ -1,7 +1,6 @@
 package br.com.polaris.safe.route.controller;
 
-import br.com.polaris.safe.route.domain.Comum;
-import br.com.polaris.safe.route.domain.Usuario;
+import br.com.polaris.safe.route.domain.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ public class UsuarioController {
 
     public UsuarioController() {
         usuarios.add(new Comum(
-                1,
                 "Larissa",
                 "larissazica@",
                 "123456",
@@ -23,7 +21,7 @@ public class UsuarioController {
                 "21/05/1998",
                 "1234-0987"));
         usuarios.add(new Comum(
-                1,
+
                 "Camila",
                 "Camila@camila",
                 "54321",
@@ -32,15 +30,17 @@ public class UsuarioController {
                 "1234-0987"));
     }
 
+    List<Cadastro> cadastros = new ArrayList<>();
 
     @GetMapping()
-    public List<Usuario> getUsuarios() {
-        return usuarios;
+    public List<Cadastro> getCadastros() {
+        return cadastros;
     }
 
     @PostMapping("/cadastro")
-    public String cadastraUsuario(@RequestBody Usuario usuario) {
-        usuarios.add(usuario);
+    public String cadastraUsuario(@RequestBody Cadastro cadastro) {
+
+        cadastros.add(cadastro);
         return "Cadastro realizado com sucesso";
     }
 
