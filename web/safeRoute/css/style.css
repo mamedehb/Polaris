@@ -50,8 +50,10 @@ section{
 }
 
 .image-area img{
-    width: 861px;
-    height: 595px;
+    min-width: 861px;
+    min-height: 595px;
+    width: 95%;
+    height: 95%;
     position: absolute;
     right: -60px;
 }
@@ -188,3 +190,98 @@ section{
     line-height: 0 !important;
     margin: 0 !important;
 }
+
+.header-register{
+    min-height: 55px !important;
+    height: auto !important;
+}
+
+.text-header{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.text-header h2{
+    width: auto !important;
+    height: auto !important;
+    font-size: 22px;
+    color: var(--title-color);
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.text-header p{
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 0 !important;
+}
+
+.header-register img{
+    width: 45px;
+    height: 55px;
+}
+
+/* ----- CADASTRO PASSO 3 ----- */
+
+#btnStepTree{
+    margin: 12px 0 !important;
+}
+
+.steps{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-top: 20px !important;
+}
+
+.line{
+    width: 100%;
+    border: 2px solid #D6D6D6;
+}
+
+.circles-area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.circle{
+    min-width: 37px;
+    min-height: 37px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.circle h2{
+    width: 100%;
+    height: 100%;
+    font-size: 22px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    color: var(--white-primary);
+}
+
+.green{
+    background: var(--green-primary);
+}
+
+.gray{
+    background: #D6D6D6;
+}
+
+
